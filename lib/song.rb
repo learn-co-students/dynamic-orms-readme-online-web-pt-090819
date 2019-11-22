@@ -27,6 +27,7 @@ class Song
 
   def initialize(options={})
     options.each do |property, value|
+      #property = col_name, value = col_value
       self.send("#{property}=", value)
     end
   end
@@ -60,5 +61,6 @@ class Song
 
 end
 
+  
 
 
